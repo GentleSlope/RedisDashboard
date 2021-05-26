@@ -1,0 +1,190 @@
+{
+    "maxmemory-policy": {
+        "nowValue": "volatile-lru",
+        "restart": "no",
+        "defaultValue": "allkeys-lru",
+        "optionValue": [
+            "volatile-lru",
+            "allkeys-lru",
+            "volatile-random",
+            "allkeys-random",
+            "volatile-ttl",
+            "noeviction"
+        ],
+        "type": "option"
+    },
+    "appendonly": {
+        "nowValue": "yes",
+        "restart": "no",
+        "defaultValue": "yes",
+        "optionValue": [
+            "yes",
+            "no"
+        ],
+        "type": "option"
+    },
+    "list-max-ziplist-size": {
+        "nowValue": "-2",
+        "restart": "no",
+        "defaultValue": "-2",
+        "optionValue": [
+            "-1",
+            "-2",
+            "-3",
+            "-4",
+            "-5"
+        ],
+        "type": "option"
+    },
+    "auto-aof-rewrite-min-size": {
+        "nowValue": 67108864,
+        "restart": "no",
+        "defaultValue": 67108864,
+        "optionValue": "67108864",
+        "type": "num"
+    },
+    "slowlog-log-slower-than": {
+        "nowValue": 10000,
+        "restart": "no",
+        "defaultValue": 10000,
+        "optionValue": "10000",
+        "type": "num"
+    },
+    "hash-max-ziplist-entries": {
+        "nowValue": 512,
+        "restart": "no",
+        "defaultValue": 512,
+        "optionValue": "512",
+        "type": "num"
+    },
+    "auto-aof-rewrite-percentage": {
+        "nowValue": 100,
+        "restart": "no",
+        "defaultValue": 100,
+        "optionValue": "100",
+        "type": "num"
+    },
+    "maxmemory": {
+        "nowValue": 0,
+        "restart": "no",
+        "defaultValue": 0,
+        "optionValue": "0",
+        "type": "num"
+    },
+    "zset-max-ziplist-entries": {
+        "nowValue": 128,
+        "restart": "no",
+        "defaultValue": 128,
+        "optionValue": "128",
+        "type": "num"
+    },
+    "cluster-require-full-coverage": {
+        "nowValue": "yes",
+        "restart": "no",
+        "defaultValue": "yes",
+        "optionValue": "no",
+        "type": "string"
+    },
+    "save": {
+        "nowValue": [
+            ""
+        ],
+        "restart": "no",
+        "defaultValue": [],
+        "optionValue": [
+            "900 1"
+        ],
+        "type": "strings"
+    },
+    "tcp-backlog": {
+        "nowValue": 511,
+        "restart": "yes",
+        "defaultValue": 511,
+        "optionValue": "511",
+        "type": "num"
+    },
+    "timeout": {
+        "nowValue": 0,
+        "restart": "no",
+        "defaultValue": 0,
+        "optionValue": "0",
+        "type": "num"
+    },
+    "maxclients": {
+        "nowValue": 10000,
+        "restart": "no",
+        "defaultValue": 10000,
+        "optionValue": "10000",
+        "type": "num"
+    },
+    "appendfsync": {
+        "nowValue": "everysec",
+        "restart": "no",
+        "defaultValue": "everysec",
+        "optionValue": [
+            "always",
+            "everysec",
+            "no"
+        ],
+        "type": "option"
+    },
+    "cluster-node-timeout": {
+        "nowValue": 15000,
+        "restart": "no",
+        "defaultValue": 15000,
+        "optionValue": "15000",
+        "type": "num"
+    },
+    "slowlog-max-len": {
+        "nowValue": 128,
+        "restart": "no",
+        "defaultValue": 128,
+        "optionValue": "128",
+        "type": "num"
+    },
+    "loglevel": {
+        "nowValue": "notice",
+        "restart": "no",
+        "defaultValue": "notice",
+        "optionValue": [
+            "debug",
+            "verbose",
+            "notice",
+            "warning"
+        ],
+        "type": "option"
+    },
+    "set-max-intset-entries": {
+        "nowValue": 512,
+        "restart": "no",
+        "defaultValue": 512,
+        "optionValue": "512",
+        "type": "num"
+    },
+    "zset-max-ziplist-value": {
+        "nowValue": 64,
+        "restart": "no",
+        "defaultValue": 64,
+        "optionValue": "value",
+        "type": "num"
+    },
+    "hash-max-ziplist-value": {
+        "nowValue": 64,
+        "restart": "no",
+        "defaultValue": 64,
+        "optionValue": "64",
+        "type": "num"
+    },
+    "list-compress-depth": {
+        "nowValue": "0",
+        "restart": "no",
+        "defaultValue": "0",
+        "optionValue": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "type": "option"
+    }
+}
